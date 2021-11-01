@@ -19,10 +19,8 @@ class LabyrinthSolver
         $accessibleCoords = $this->getAllAccessibleCoords();
 
         $this->isAccessibleFromStart($posY, $posX);
-        sort($this->accessibleFromStart);
-        sort($accessibleCoords);
 
-        return $this->accessibleFromStart === $accessibleCoords ? 1 : 0;
+        return count($this->accessibleFromStart) === count($accessibleCoords) ? 1 : 0;
     }
 
     private function getAllAccessibleCoords(): array
