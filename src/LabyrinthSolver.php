@@ -4,9 +4,8 @@ namespace App;
 
 class LabyrinthSolver
 {
-    public function isFree()
+    public function isAccessible($height, $width, $map, $posX, $posY)
     {
-        return 1;
     }
 
 }
